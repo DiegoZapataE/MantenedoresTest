@@ -1,0 +1,23 @@
+<div class="layout">
+  <nav class="navbar" *ngIf="mostrarNavbar">
+    <div class="nav-container">
+      <div class="logo">Dashboard</div>
+
+      <div class="nav-links">
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+          Inicio |
+        </a>
+
+        <a routerLink="/usuarios" routerLinkActive="active"> Usuarios |</a>
+
+        <a routerLink="/roles" routerLinkActive="active"> Roles |</a>
+
+        <a routerLink="/variables" routerLinkActive="active"> Variables </a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="content">
+    <router-outlet></router-outlet>
+  </main>
+</div>

@@ -1,0 +1,41 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.table-container {
+  width: 100%;
+  max-width: 900px;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  text-align: left;
+}
+
+.mensaje {
+  color: #4caf50;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
