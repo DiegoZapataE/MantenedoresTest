@@ -58,7 +58,7 @@ docker run -d --name mariadb-test -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=
 Editar appsettings.json:
 
 "ConnectionStrings": {
-"DefaultConnection": "server=localhost;port=3307;database=paneldb;user=root;password=root"
+"DefaultConnection": "server=localhost;port=3306;database=paneldb;user=root;password=root"
 }
 
 3. Configuración en Program.cs
@@ -121,6 +121,8 @@ Ejecutar:
 
 cd backend
 dotnet run
+
+La aplicación incluye datos iniciales (seed) para facilitar su uso al levantar el proyecto.
 
 Disponible en:
 http://localhost:5057
